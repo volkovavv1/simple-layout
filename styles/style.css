@@ -3,22 +3,23 @@ body {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
 }
 
 .container {
-    padding: 30px 110px 0 146px;
+    padding: 2.14% 7.86% 0 10.43%; 
 }
 
 .header {
-    width: 1113px;
-    height: 42px;
+    width: 97.29%; 
+    height: 3.67%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 54px;
+    font-size: 1em;
+    margin-bottom: 7.34%;
 }
 
 .header-links {
@@ -52,8 +53,8 @@ body {
 }
 
 .logo {
-    width: 131px;
-    height: 40px;
+    width: 11.77%;
+    height: 3.59%;
     cursor: pointer;
 }
 
@@ -69,7 +70,7 @@ body {
     padding: 9px 23px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 0.3s;
@@ -80,22 +81,30 @@ body {
 }
 
 main {
+    width: 98.08%;
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
+    gap: 6.69%;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    margin-top: 64px;
-    width: 597px;
+    margin-top: 3.03%;
+    width: 53.21%;
+    max-width: 900px;
+}
+
+.right {
+    position: relative;
+    width: 40.1%;
 }
 
 .title {
-    font-size: 48px;
+    font-size: 3em;
     color: #2D2D2D;
     font-weight: bold;
-    width: 474px;
+    width: 79.4%;
     line-height: 65px;
 }
 
@@ -105,23 +114,30 @@ main {
 }
 
 .subtext {
-    margin: 22px 0 30px 0;
+    margin: 3.69% 0 5.02% 0;
     color: #7C7C7C;
     line-height: 26px;
-    width: 446px;
+    width: 74.71%;
 }
 
 .users {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #707070;
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.users-text {
+    transform: translateX(-39px);
 }
 
 .search-container {
     position: relative;
-    width: 597px;
+    width: 100%;
     height: 62px;
-    margin: 50px 0 40px 0;
+    margin: 8.38% 0 6.7% 0;
 }
 
 .search-input {
@@ -144,16 +160,215 @@ main {
     position: absolute;
     right: 6px;
     top: 4px;
-    height: 100%;
     width: 55px; 
-    height: 55px;
+    height: 90.16%;
     background-color: #48B774;
-
     border: none;
-    border-radius: 100px; 
+    border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0;
 }
 
 .search-button:hover {
     background-color: #3D9F64; 
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.orb {
+    position: relative;
+    width: 99.11%;
+    padding-top: 99.11%;
+    border: 2px solid #E8E8E8;
+    border-radius: 50%;
+}
+
+.flag {
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+}
+
+.flag--ind {
+    background-image: url('../images/india.svg');
+    width: 15.55%;
+    height: 15.55%;
+}
+
+.flag--tiny {
+    background-image: url('../images/india.svg');
+    width: 11.11%;
+    height: 11.11%;
+}
+
+.flag--gb {
+    background-image: url('../images/gb.svg');
+    width: 17.77%;
+    height: 17.77%;
+}
+
+.flag--italy {
+    background-image: url('../images/italy.svg');
+    width: 13.33%;
+    height: 13.33%;
+}
+
+.green-bg {
+    position: absolute;
+    top: 20.78%;
+    left: 20%;
+    width: 62.22%;
+    padding-top: 62.22%;
+    border-radius: 50%;
+    background-color: #48B774;
+}
+
+.girl {
+    position: absolute;
+    top: 7.82%;
+    left: 19.56%;
+    width: 62.22%;
+    height: 98.93%;
+}
+
+.girl-img {
+    width: 100%;
+}
+
+.users-container {
+    display: flex; 
+}
+
+.image-container {
+    height: 100%;
+}
+
+.image-container:nth-of-type(2) {
+    z-index: -1;
+    transform: translateX(-18px); 
+}
+
+.image-container:nth-of-type(3) {
+    z-index: -2;
+    transform: translateX(-34px); 
+}
+
+.image-container:last-of-type {
+    z-index: -3;
+    transform: translateX(-50px); 
+}
+
+.image-container img {
+    max-width: 100%; 
+    display: block; 
+}
+
+
+@media (max-width: 1200px) {
+    .green-bg {
+        top: 18%;
+    }
+
+    main {
+        justify-content: start;
+        gap: 3%;
+    }
+
+    .title {
+        line-height: 48px;
+    }
+
+    .header-links {
+        gap: 25px;
+    }
+}
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+    
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .search-container {
+        margin: 4.38% 0 3.7% 0;
+    }
+    
+    .title {
+        width: 100%;
+        font-size: 3em;
+        line-height: normal;
+    }
+
+    .subtext {
+        width: 100%;
+    }
+
+    .search-input {
+        padding: 15px 30px;
+    }
+
+    .green-bg {
+        top: 23%;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .right{
+        width: 70%;
+    }
+
+    .search-input {
+        padding: 10px 15% 10px 5%;
+        font-size: 1em;
+    }
+
+
+    
+}
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .search-container {
+        margin: 7% 0 8% 0;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .users, 
+    .right {
+        display: none;
+    }
+
+    .search-input {
+        padding-left: 20px;
+    }
+
 }
